@@ -5,15 +5,15 @@
 class Kubert < Formula
   desc ""
   homepage "https://github.com/idebeijer/kubert"
-  version "0.0.1"
+  version "0.0.2"
 
   depends_on "fzf" => :optional
   depends_on "kubectl" => :optional
 
   on_macos do
     on_intel do
-      url "https://github.com/idebeijer/kubert/releases/download/v0.0.1/kubert_0.0.1_darwin_amd64.tar.gz"
-      sha256 "708b202c175740e5fd029da542e0700d47272b14767d94ed4a007cffb812db35"
+      url "https://github.com/idebeijer/kubert/releases/download/v0.0.2/kubert_0.0.2_darwin_amd64.tar.gz"
+      sha256 "c2a927119989b6ae7fba1b5f2d5e0cecf178e312119f6c9473bcaf20ba0859e8"
 
       def install
         bin.install "kubert"
@@ -23,8 +23,8 @@ class Kubert < Formula
       end
     end
     on_arm do
-      url "https://github.com/idebeijer/kubert/releases/download/v0.0.1/kubert_0.0.1_darwin_arm64.tar.gz"
-      sha256 "95cb3dc6f34bbde4306d0da1dd1073adcd352bc43b0caa482ea8ed0571aad882"
+      url "https://github.com/idebeijer/kubert/releases/download/v0.0.2/kubert_0.0.2_darwin_arm64.tar.gz"
+      sha256 "038e4c5dbe3edcb5abc2686c9c511303f64cb238518e045baeef226fcdfadd0a"
 
       def install
         bin.install "kubert"
@@ -38,8 +38,8 @@ class Kubert < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/idebeijer/kubert/releases/download/v0.0.1/kubert_0.0.1_linux_amd64.tar.gz"
-        sha256 "2bf58c0d5bc184efb61dfab197c7301b65e765c3a0b18bc8669c5d5d88fe5957"
+        url "https://github.com/idebeijer/kubert/releases/download/v0.0.2/kubert_0.0.2_linux_amd64.tar.gz"
+        sha256 "b4236426c45b63384df9bbc76c0ccf66a44a2a69577b9d0a8b21722bea3eb933"
 
         def install
           bin.install "kubert"
@@ -51,8 +51,8 @@ class Kubert < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/idebeijer/kubert/releases/download/v0.0.1/kubert_0.0.1_linux_arm64.tar.gz"
-        sha256 "a34a96e02e2d30dfaf62e26397a4a96ea27674603d712da380cb528ca55b0e2c"
+        url "https://github.com/idebeijer/kubert/releases/download/v0.0.2/kubert_0.0.2_linux_arm64.tar.gz"
+        sha256 "e817de956b2dd02864ad697d55dc548b7ea9e59a9d9db2d7f87a033c0ede0a5a"
 
         def install
           bin.install "kubert"
