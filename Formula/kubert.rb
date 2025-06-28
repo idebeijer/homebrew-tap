@@ -8,7 +8,7 @@ class Kubert < Formula
   version "0.0.3"
   
   deprecate! date: "2025-06-29",
-    because: "kubert is transitioning to a cask-based installation. Before installing the cask, please uninstall the formula first with: `brew uninstall kubert`",
+    because: "is transitioning to a cask-based installation. Before installing the cask, please uninstall the formula first with: `brew uninstall kubert`",
     replacement_cask: "idebeijer/tap/kubert"
 
   depends_on "fzf" => :optional
