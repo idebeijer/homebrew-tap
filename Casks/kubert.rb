@@ -2,7 +2,7 @@
 cask "kubert" do
   desc ""
   homepage "https://github.com/idebeijer/kubert"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,29 +15,25 @@ cask "kubert" do
 
   on_macos do
     on_intel do
-      url "https://github.com/idebeijer/kubert/releases/download/v0.1.0/kubert_0.1.0_darwin_amd64.tar.gz"
-      sha256 "3de4fe291bd3cf3b5b0cde8180db21e372c8a682e1d4c0dceadfaf90f45a520e"
+      url "https://github.com/idebeijer/kubert/releases/download/v0.1.1/kubert_0.1.1_darwin_amd64.tar.gz"
+      sha256 "f997108bb391bfe81dd83fbe84c1ae5a2910d49f162265e046c577c61bbbf005"
     end
     on_arm do
-      url "https://github.com/idebeijer/kubert/releases/download/v0.1.0/kubert_0.1.0_darwin_arm64.tar.gz"
-      sha256 "fc7d240470a80b6f367d432e06563c0386a077d3b03835d49832ec5ab1935d5e"
+      url "https://github.com/idebeijer/kubert/releases/download/v0.1.1/kubert_0.1.1_darwin_arm64.tar.gz"
+      sha256 "1191a2d8d170226d36e9ac4f3b0394992bfa1db475c1c786997e599a4d416a6d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/idebeijer/kubert/releases/download/v0.1.0/kubert_0.1.0_linux_amd64.tar.gz"
-      sha256 "a73f7baee69f5f61b06b0e1080dc978dcb6e967c82f548d904bc52a6dd9695dc"
+      url "https://github.com/idebeijer/kubert/releases/download/v0.1.1/kubert_0.1.1_linux_amd64.tar.gz"
+      sha256 "e6a60064608bdf091b720279ac711e6f9f220c06e26328ddb05a8c98e54ca679"
     end
     on_arm do
-      url "https://github.com/idebeijer/kubert/releases/download/v0.1.0/kubert_0.1.0_linux_arm64.tar.gz"
-      sha256 "b3ed0ad23bbdff3635d04caebc36ee1a4f6f121dcf17a8953ea3f29bcf021653"
+      url "https://github.com/idebeijer/kubert/releases/download/v0.1.1/kubert_0.1.1_linux_arm64.tar.gz"
+      sha256 "7e38dff7790989cc85bb05204b6abaee72ad455470642a038a661fc3f2c500c0"
     end
   end
-
-  conflicts_with formula: [
-      "kubert",
-    ]
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
