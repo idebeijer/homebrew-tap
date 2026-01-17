@@ -3,7 +3,7 @@ cask "kubert" do
   name "kubert"
   desc ""
   homepage "https://github.com/idebeijer/kubert"
-  version "0.4.0"
+  version "0.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "kubert" do
   on_macos do
     on_intel do
       url "https://github.com/idebeijer/kubert/releases/download/v#{version}/kubert_#{version}_darwin_amd64.tar.gz"
-      sha256 "6d2621ab5633c3fb7b8431572c6b3bae1141d814cd194246a138e59b47f245ab"
+      sha256 "be3b597525ec27cb6462c0d6d398b6a88bbe3ab5eeead5177452fe8b351a6622"
     end
     on_arm do
       url "https://github.com/idebeijer/kubert/releases/download/v#{version}/kubert_#{version}_darwin_arm64.tar.gz"
-      sha256 "09373c9ec6257a7406c94e2e919e2705ce571a3fdc21bcc72db24d15444bfbfc"
+      sha256 "86a058c9faa906215f801a1afbb02e7b05589578d916b2a00e66ba822636054c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/idebeijer/kubert/releases/download/v#{version}/kubert_#{version}_linux_amd64.tar.gz"
-      sha256 "98f338a76835961faa16297cf7ee1e13ed472e008d22b278138ed28199ecd44a"
+      sha256 "73f7320b33d1a63cfd22f4e1cba02dec799f6186e09ceca8f373577b8c1ce463"
     end
     on_arm do
       url "https://github.com/idebeijer/kubert/releases/download/v#{version}/kubert_#{version}_linux_arm64.tar.gz"
-      sha256 "58b9d23d0221be7466a66a24f12ba05b0a96149cf5c49737cd1323dfbbd2d8bd"
+      sha256 "13c4a1b7c864cbeef12a017bba40ccad8b56914f96830ac3eb2d52b0a5ddb4cf"
     end
   end
 
